@@ -1,6 +1,5 @@
 .topnav {
     background-color: transparent;
-    overflow: hidden;
     display: flex;
     justify-content: end;
   }
