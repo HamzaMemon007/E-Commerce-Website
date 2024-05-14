@@ -60,25 +60,33 @@ button:hover {
     padding: 10px;
     color: #fff;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
+    span{
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    ul{
+        display: flex;
+        list-style-type: none;
+        gap: 1em;
+        color: white;
+    }
+    ul li a{
+        color: white;
+    }
 }
 
-.social-icons li {
-    display: inline-block;
-    margin: 4px;
-}
 
-.social-icons a {
-    color: #fff;
-    font-size: 20px;
-    text-decoration: none;
-}
 
-.social-icons a:hover {
-    color: #f0f0f0;
-    text-decoration: none;
-}
+
 
 @media screen and (max-width: 768px) {
     .products {
