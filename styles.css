@@ -60,7 +60,8 @@ button:hover {
     padding: 10px;
     color: #fff;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .social-icons li {
