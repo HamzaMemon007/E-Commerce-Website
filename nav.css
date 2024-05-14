@@ -1,25 +1,30 @@
 header {
     color: #fff;
     /* text-align: center; */    
+    /* background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 19, 181, 1) 100%); */
+    background-color: #002fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em;
+    flex-wrap: wrap;
 }
 
 .topnav {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 19, 181, 1) 100%);
-    display: flex;
+    /* background: rgb(255, 255, 255); */
     justify-content: center;
-    padding: 0.5em;
+    /* padding: 0.5em; */
     align-items: center;
 }
 
-/* .brand-name {
+.brand-name {
     justify-content: left;
-    color: blue;
-    padding: 0;
+    color: rgb(255, 255, 255);
+    padding: 0 0 0 10px;
     margin: 0;
     font-weight: bolder;
-    font-size: 1.2em;
-} */
+    font-size: 22px;
+}
 
 .topnav a {
 
@@ -40,7 +45,12 @@ header {
 }
 
 .topnav a.active {
-    background-color: #002fff;
-    color: white;
+    background-color: #ffffff;
+    color: #002fff;
 
+}
+@media screen and (max-width: 768px) {
+    header{
+        justify-content: center;
+    }
 }

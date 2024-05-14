@@ -39,11 +39,11 @@ main {
 
 .price {
     font-weight: bold;
-    color: #009900;
+    color: #002fff;
 }
 
 button {
-    background-color: #009900;
+    background-color: #002fff;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -52,13 +52,15 @@ button {
 }
 
 button:hover {
-    background-color: #006600;
+    background-color: #010e57;
 }
 
 .footer {
-    background-color: #131a22;
+    background-color: #002fff;
     padding: 10px;
     color: #fff;
+    display: flex;
+    justify-content: right;
 }
 
 .social-icons li {
@@ -79,6 +81,6 @@ button:hover {
 
 @media screen and (max-width: 768px) {
     .products {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, ));
     }
 }
