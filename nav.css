@@ -1,56 +1,64 @@
+nav a {
+    position: relative;
+    font-size: 1.1em;
+    color: #333;
+    text-decoration: none;
+    padding: 6px 20px;
+    transition: .5s;
+}
+nav a:hover {
+    color: #002fff;
+}
+nav a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid #002fff;
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s;
+}
+nav a:hover span {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
 header {
     color: #fff;
     /* text-align: center; */    
     /* background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 19, 181, 1) 100%); */
-    background-color: #002fff;
+    /* background-color: #002fff; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.7em;
     flex-wrap: wrap;
+    /* border-bottom: 3px double grey; */
 }
-
-.topnav {
-    /* background: rgb(255, 255, 255); */
-    justify-content: center;
-    /* padding: 0.5em; */
-    align-items: center;
-}
-
 .brand-name {
     justify-content: left;
-    color: rgb(255, 255, 255);
+    color: #002fff;
     padding: 0 0 0 10px;
     margin: 0;
     font-weight: bolder;
     font-size: 22px;
 }
 
-.topnav a {
-
-    color: #a7a7a7;
-    text-align: center;
-    padding: .5em;
-    text-decoration: none;
-    font-size: 1em;
-    border-radius: 45%;
-    /* border: solid 1px #002fff; */
-    /* margin-top: 0.5em;
-    margin-bottom: 0.9em; */
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.topnav a.active {
-    background-color: #ffffff;
-    color: #002fff;
-
-}
 @media screen and (max-width: 768px) {
     header{
         justify-content: center;
+    }
+} 
+@media screen and (max-width: 410px) {
+    header {
+        justify-content: center;
+
+        nav a{
+            font-size: 0.8em;
+            padding: 6px 10px; 
+        }
     }
 }
